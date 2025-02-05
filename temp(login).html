@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            display:flex;
+            justify-content: center;
+            text-align: center;
+            border: 2px solid silver;
+            border-radius: 20px;
+        }
+        .box{
+            boader:2px solid silver;
+            width:600px;
+            padding :20px;
+            boader-radius:20px;
+            font-size:xx-large;
+        }    
+        input{
+            padding:20px;
+            width:90%;
+            font-size:xx-large;
+        }
+        button{
+            background-color:blue;
+            width: 100%;
+            padding:20px;
+            boader-radius:30px;
+            colour:white;
+            font-size:xx-large;
+        }
+    </style>
+    <script>
+        function chkUser(){
+            let username=document.getElementById("name").value
+            let password=document.getElementById("pwd").value
+            if (username =="" || password=="") {
+                msg.innerHTML=""
+            }
+            if (username !=="john@gmail.com" || password!=="1234") {
+                msg.innerHTML="ACCESS DENIED"
+            }
+            else{
+                msg.innerHTML="WELCOME JOHN"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="con" >
+        <div class="box">
+        <p><div id="msg" ></div></p>
+        <input type ="text" required id ="name" placeholder="Email address or phone number" >  <br><br> 
+        <input  type ="password" required id="pwd" placeholder="Password" ><br><br>
+        <button onclick="chkUser()" >Log in</button>
+    
+        </div>
+    </div>
+</body>
+</html>
