@@ -9,14 +9,14 @@
             display:flex;
             justify-content: center;
             text-align: center;
-            border: 2px solid silver;
-            border-radius: 20px;
+           /*border: 2px solid silver;
+            /* border-radius: 20px; */
         }
         .box{
-            boader:2px solid silver;
-            width:600px;
+            border:2px solid silver;
+            width:50%;
             padding :20px;
-            boader-radius:20px;
+            border-radius:20px;
             font-size:xx-large;
         }    
         input{
@@ -28,8 +28,8 @@
             background-color:blue;
             width: 100%;
             padding:20px;
-            boader-radius:30px;
-            colour:white;
+            border-radius:30px;
+            color:white;
             font-size:xx-large;
         }
     </style>
@@ -38,13 +38,13 @@
             let username=document.getElementById("name").value
             let password=document.getElementById("pwd").value
             if (username =="" || password=="") {
-                msg.innerHTML=""
+                msg.innerHTML="Enter Details"
             }
-            if (username !=="john@gmail.com" || password!=="1234") {
-                msg.innerHTML="ACCESS DENIED"
+            if (username =="john@gmail.com" || password=="1234") {
+                msg.innerHTML="WELCOME JOHN"
             }
             else{
-                msg.innerHTML="WELCOME JOHN"
+                msg.innerHTML="ACCESS DENIED"
             }
         }
     </script>
